@@ -123,12 +123,14 @@ img { /*unneccessary specification*/
     text-align:center;
     outline:none;
     font-size: 15px;
+    font-family: Tangerine;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+    text-align: center;
   }
   
   .tooltip .tooltiptext {
