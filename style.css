@@ -109,6 +109,25 @@ img { /*unneccessary specification*/
     /*transform: scale(1,1); /*unneccessary when you specified width and height*/
     /*background: url('files/images/personal.jpg') no-repeat center;  /*I do this to make it harder to copy*/
 }
+
+.collapsible{
+    background-color:darksalmon;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align:center;
+    outline:none;
+    font-size: 15px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
 main .section-title{ /*unneccessary specification*/
 	padding: 30px 0 15px 0;
     font-size: 20px;
@@ -119,8 +138,7 @@ main .publications{ /*unneccessary specification*/
 	text-indent: -40px;
 }
 footer{
-    position: absolute;
-    left: 1000;
+    text-align: center;
     bottom: 0;
     width: 200%;
     height: 110px;

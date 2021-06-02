@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div class='title'>Jaclyn Chiu</div> <!--h1-->
+        <div class='title'>Jaclyn's Personal Website</div> <!--h1-->
     </header>
     <nav>
         <a href='..' class='button center'>HOME</a>
@@ -32,10 +32,37 @@
         <div>
             I played flute ever since 4th grade and played for my school band and orchestra.
         </div>
+        
+        <button type = "button" class="collapsible"> 
+            List of Campus Activities
+        </button>
+        <div class = "content">
+            <li>Grace on Campus</li>
+            <li>Consult Your Community </li>
+            <li>Undergraduate Research</li>
+        </div>
+
     </main>
     <footer>
         <a href='mailto:jaclynchiu7@g.ucla.edu' target="_blank" class='button center'>Email</a>
         <a href='https://www.linkedin.com/in/jaclyn-chiu-a5480316b/' target="_blank" class='button footer-button'>LinkedIn</a>
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>
