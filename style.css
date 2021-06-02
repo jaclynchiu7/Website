@@ -61,9 +61,11 @@ header .title{ /*unneccessary specification*/
 }
 nav{
     position: relative;
-    width: 120%;
+    width: 100%;
     height: 70px;
+    text-align: center;
 }
+
 .button{
     position: relative;
     float: left;
@@ -103,9 +105,11 @@ main .textbox{ /*unneccessary specification*/
 }
 img { /*unneccessary specification*/
     position: relative;
-    width: 600px;
-    height: 800px;
-    margin: 0;
+    display: block;
+    width: 450px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     /*transform: scale(1,1); /*unneccessary when you specified width and height*/
     /*background: url('files/images/personal.jpg') no-repeat center;  /*I do this to make it harder to copy*/
 }
